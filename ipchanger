@@ -1,0 +1,57 @@
+
+
+echo " |<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+echo " |"
+echo " |"
+echo " |"
+echo " |                        ipchanger by tzgn"
+echo " |"
+echo " |"
+echo " |"
+echo " |<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+echo "						torghost u çalıştırmayı unutma :)"
+
+## torghost indirme komutu:
+## git clone https://github.com/T-repo/TORGHOST
+##
+
+#usr: T-repo
+#pass: *****************************
+
+## kurulum komutları:
+## cd TORGHOST
+## sh install.sh
+
+
+help="--help"
+inf0="--inf"
+inf=0
+if (( $# != 0 ))
+then
+	if [ "$1" == "$help" ]
+	then
+		echo "--help : help menu"
+		echo "--inf : infinitive ip changing"
+		echo "parametresiz: one change"
+	elif [ "$1" == "$inf0" ]
+	then
+		echo "durdurmak için Ctrl+Z"
+		while [ $inf == 0 ] 
+		do
+			torghost switch 
+			echo '********yeni IP********' 
+			curl www.icanhazip.com
+			echo "************************"
+		done
+	else
+		echo "--help : help menu"
+		echo "--inf : infinitive ip changing"
+		echo "parametresiz: one change"
+fi
+	else
+			torghost switch 
+                	echo '********yeni IP********' 
+                	curl www.icanhazip.com
+			echo '***********************'
+	fi
+
