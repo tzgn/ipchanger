@@ -11,16 +11,7 @@ echo " |"
 echo " |<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 echo "						torghost u çalıştırmayı unutma :)"
 
-## torghost indirme komutu:
-## git clone https://github.com/T-repo/TORGHOST
-##
 
-#usr: T-repo
-#pass: mail at ----> tunahan.ozgen.ofis@gmail.com
-
-## kurulum komutları:
-## cd TORGHOST
-## sh install.sh
 
 
 help="--help"
